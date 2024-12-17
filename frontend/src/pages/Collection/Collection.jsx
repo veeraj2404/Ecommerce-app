@@ -34,7 +34,7 @@ export default function Collection() {
 
     const applyFilter = () => {
         let productsCopy = products.slice();
-        
+
         if(showSearch && search) {
             productsCopy = productsCopy.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
         }
