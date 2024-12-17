@@ -12,11 +12,14 @@ import Cart from './pages/Cart/Cart'
 import Login from './pages/Login/Login'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Orders from './pages/Orders/Orders'
+import Footer from './components/Footer/Footer'
+import SearchBar from './components/SearchBar/SearchBar'
 
 export default function App() {
     return (
-        <div className='px-32 sm:px-[5vm] md:px=[7vw] lg:px-[9vm]'>
+        <div className='px-4 sm:px-[5vm] md:px=[7vw] lg:px-[9vm]'>
             <Navbar/>
+            <SearchBar/>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/collection' element={<Collection />} />
@@ -28,7 +31,7 @@ export default function App() {
                 <Route path='/place-order' element={<PlaceOrder />} />
                 <Route path='/orders' element={<Orders />} />
             </Routes>
-
+            <Footer/>
         </div>
     )
 }
