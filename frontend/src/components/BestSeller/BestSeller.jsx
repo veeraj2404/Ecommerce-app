@@ -11,7 +11,7 @@ export default function BestSeller() {
     useEffect(() => {
         const bestProduct = products.filter((item) => (item.bestseller))
         SetBestSeller(bestProduct.slice(0, 5))
-    }, [])
+    }, [products])
 
 
 
