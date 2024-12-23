@@ -12,6 +12,7 @@ import Cart from './pages/Cart/Cart'
 import Login from './pages/Login/Login'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Orders from './pages/Orders/Orders'
+import Verify from './pages/Verify/Verify'
 import Footer from './components/Footer/Footer'
 import SearchBar from './components/SearchBar/SearchBar'
 import {ToastContainer, toast} from 'react-toastify'
@@ -33,6 +34,7 @@ export default function App() {
                 <Route path='/login' element={<Login />} />
                 <Route path='/place-order' element={<PlaceOrder />} />
                 <Route path='/orders' element={<Orders />} />
+                <Route path='/verify' element={<Verify />} />
             </Routes>
             <Footer/>
         </div>

@@ -59,7 +59,6 @@ export default function Add({token}) {
             }
             
         } catch (error) {
-            console.log(error)
             toast.success(error.message)
         }
     }

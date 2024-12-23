@@ -19,11 +19,10 @@ export default function Orders({ token }) {
 
             const response = await axios.post(backendUrl + "/api/order/list", {}, { headers: { token } })
             if (response.data.success) {
-                setOrders(response.data.orders);
+                setOrders(response.data.orders.reverse());
             }
 
         } catch (error) {
-            console.log(error)
             toast.error(error.message)
         }
 
@@ -38,7 +37,6 @@ export default function Orders({ token }) {
             }
 
         } catch (error) {
-            console.log(error)
             toast.error(response.data.message)
         }
     }

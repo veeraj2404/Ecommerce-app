@@ -18,7 +18,6 @@ export default function List({token}) {
                 toast.error(response.data.message)
             }
         } catch (error) {
-            console.log(error);
             toast.error(error.message)
         }
     }
@@ -36,7 +35,6 @@ export default function List({token}) {
             }
 
         } catch (error) {
-            console.log(error);
             toast.error(error.message)
         }
     }

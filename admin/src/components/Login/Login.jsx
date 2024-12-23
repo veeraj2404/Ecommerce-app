@@ -21,7 +21,6 @@ export default function Login({ setToken }) {
             }
 
         } catch (error) {
-            console.log(error);
             toast.error(error.message)
         }
     }

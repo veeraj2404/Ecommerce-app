@@ -30,11 +30,9 @@ export default function Orders() {
                     })
                 })
                 setOrderData(allOrdersItem.reverse())
-                console.log(allOrdersItem)
             }
 
         } catch (error) {
-            console.log(error)
             toast.error(error.message)
         }
     }
